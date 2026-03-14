@@ -1,0 +1,405 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --black: #0f172a;
+    --blue: #1D4ED8;
+    --blue-light: #60A5FA;
+    --gray: #94a3b8;
+    --white: #ffffff;
+    --preto: #323232;
+    --font-homenaje: "Homenaje", sans-serif;
+    --font-italianno: "Italianno", cursive;
+    --font-roboto: "Roboto", sans-serif;
+    --font-italiana: "Italiana", sans-serif;
+}
+
+body {
+    font-family: var(--font-homenaje);
+    background-color: #f6f6f6;
+}
+
+/*cabeçalho=========
+=============================
+==================================cabeçalho*/
+
+header {
+    display: flex;
+    justify-content: space-between;
+    background-color: var(--preto);
+    align-items: center;
+    padding: 15px;
+    width: 100%;
+    height: auto;
+}
+
+.logo{
+    font-family: var(--font-italianna);
+    font-size: 1.5rem;
+    font-weight: 500;
+    color: var(--gray);
+    display: flex;
+    align-items: center;
+}
+.logo img{
+    width: 30px;
+    height: auto;
+}
+
+header ul {
+    display: flex;
+    gap: 40px;
+    list-style: none;
+}
+
+header a {
+    font-family: var(--font-homenaje);
+    font-size: 1.2rem;
+    text-decoration: none;
+    color: var(--gray);
+    font-weight: 500;
+    transition: 0.3s;
+}
+
+header a:hover {
+    color: var(--blue-light);
+    text-shadow: 0 2px 5px var(--blue-light);
+}
+
+/*cabeçalho final ==================
+====================================
+=================cabeçalho*/
+
+/*banner apresentação*/
+.banner {
+    background-color: var(--black);
+    width: 100%;
+    height: auto;
+}
+
+.img-banner {
+    width: 100%;
+    object-fit: cover;
+    height: 350px;
+    opacity: 0.3;
+}
+
+.social {
+    display: flex;
+    gap: 15px;
+    justify-content: right;
+}
+
+.social i {
+    font-size: 1.2rem;
+    color: var(--white);
+    margin-right: 20px;
+    transition: 0.2s ease;
+}
+
+.social i:hover {
+    font-size: 1.25rem;
+    color: var(--blue-light);
+}
+
+section.hero {
+    width: 100%;
+    padding: 10px 20px;
+    height: auto;
+}
+
+.container-hero {
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+
+.img-perfil {
+    width: 300px;
+    height: auto;
+    border-radius: 30px;
+    position: relative;
+    margin-top: -150px;
+    box-shadow: 0 3px 8px var(--blue-light);
+}
+
+.text-hero {
+    max-width: 60%;
+    line-height: 1.5rem;
+    display: block;
+    margin: auto;
+}
+
+.text-hero h1 {
+    font-family: var(--font-homenaje);
+    font-size: 2.2rem;
+    font-weight: 600;
+    line-height: 40px;
+}
+.text-hero p{
+    font-size: 1.2rem;
+    margin-top: 20px;
+    font-family: var(--font-roboto);
+}
+
+.divisao {
+    padding: 10px;
+    border-bottom: 2px solid var(--black);
+    text-align: center;
+    margin: 20px auto;
+    width: 80%;
+}
+.btn{
+    padding: 5px;
+    border: none;
+    background-color: var(--black);
+    border-radius: 30px;
+    color: var(--gray);
+    box-shadow: 0 3px 8px var(--blue-light);
+    text-decoration: none;
+    transition: 0.2s;
+}
+.btn:hover{
+    color: var(--blue-light);
+    padding: 6px;
+}
+/*======================
+final apresentação banner=
+======================*/
+
+/* ===========================
+   CARDS - HABILIDADES
+=========================== */
+
+.cards{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(205px, 1fr));
+    gap: 5px;
+    padding: 20px;
+    text-align: center;
+    background-color: var(--black);
+    border-radius: 20px;
+}
+
+/* Ícones */
+.cards i{
+    font-size: 2.5rem;
+    color: var(--blue);
+    transition: 0.3s ease;
+}
+
+/* Card individual */
+.card-item{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    padding: 30px;
+    border-radius: 20px;
+    background-color: var(--white);
+    box-shadow: 0 2px 8px var(--blue-light);
+    transition: 0.3s ease;
+}
+
+/* Hover efeito profissional */
+.card-item:hover{
+    transform: translateY(-6px);
+    box-shadow: 0 6px 20px var(--blue-light);
+}
+
+.card-item:hover i{
+    transform: scale(1.1);
+    color: var(--blue-light);
+}
+
+/* Título do card */
+.card-item h2{
+    font-family: var(--font-homenaje);
+    font-size: 1.3rem;
+    font-weight: 600;
+}
+
+/*===============================
+        Destaques
+================================= 
+*/
+.destaques{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+    margin: 50px; 
+}
+.destaques .card-item{
+    padding: 20px;
+    text-align: center;
+}
+.destaques .card-item img{
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 15px;
+    transition: 0.2s ease;
+}
+.destaques .card-item img:hover{
+    transform: scale(1.05);
+    box-shadow: 0 2px 4px var(--blue-light);
+}
+
+
+/*===============================
+        Destaques-final
+================================= 
+*/
+.svg{
+    width: 50px;
+    height: 50px;
+    transition: 0.3s ease;
+}
+.svg:hover{
+    transform: scale(1.1);
+    color: var(--blue-light);
+}
+
+/* ===============================
+        SAIBA MAIS================================= */
+
+.saiba-mais {
+    background-color: var(--black);
+    padding: 60px 20px;
+    margin-top: 60px;
+    color: var(--white);
+}
+
+.container-saiba {
+    max-width: 800px;
+    margin: auto;
+    text-align: center;
+}
+
+.container-saiba p {
+    font-family: var(--font-roboto);
+    font-size: 1.1rem;
+    color: var(--gray);
+    line-height: 1.6rem;
+    margin-bottom: 40px;
+}
+
+.acoes-saiba {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.btn-saiba {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 10px 20px;
+    border-radius: 30px;
+    background-color: var(--blue);
+    color: var(--white);
+    text-decoration: none;
+    font-family: var(--font-homenaje);
+    transition: 0.3s ease;
+    box-shadow: 0 3px 10px var(--blue-light);
+}
+
+.btn-saiba:hover {
+    background-color: var(--blue-light);
+    transform: translateY(-4px);
+}
+/*===================
+==================footer*/
+footer{
+    background-color: var(--preto);
+    color: var(--gray);
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: space-around;
+    padding: 10px;
+}
+footer a{
+    text-decoration: none;
+    color: var(--gray);
+
+}
+
+/*botão flutuante*/
+
+.whatsapp-float {
+    position: fixed;
+    bottom: 25px;
+    right: 25px;
+    width: 60px;
+    height: 60px;
+    background-color: #25D366;
+    color: white;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 28px;
+    text-decoration: none;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+    z-index: 999;
+    transition: 0.3s ease;
+}
+
+.whatsapp-float:hover {
+    transform: scale(1.1);
+    box-shadow: 0 6px 20px rgba(0,0,0,0.4);
+}
+
+
+/*mobile============================
+============================================mobile*/
+@media (max-width: 670px) {
+    header {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .container-hero {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 15px;
+        text-align: center;
+    }
+
+    .text-hero {
+        max-width: 80%;
+        line-height: 2rem;
+    }
+
+    .text-hero h1 {
+        font-family: var(--font-italiana);
+        font-size: 1.5rem;
+        font-weight: 600;
+    }
+
+    .social {
+        background-color: #f6f6f6;
+        justify-content: center;
+    }
+
+    .social i {
+        color: #0f172a;
+    }
+
+    .img-perfil {
+        width: 200px;
+        margin-top: -330px;
+        margin-bottom: 30px;
+    }
+    .destaques{
+        grid-template-columns: 1fr;
+    }
+}

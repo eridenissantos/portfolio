@@ -1,0 +1,66 @@
+/* ================= CONTATO ================= */
+
+.contato-hero {
+    padding: 140px 6% 60px 6%;
+    text-align: center;
+}
+
+.contato-hero h1 {
+    font-size: 2.2rem;
+    margin-bottom: 15px;
+}
+
+.contato-hero p {
+    color: var(--gray);
+}
+
+.contato-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.contato-info {
+    background: var(--card);
+    padding: 40px;
+    border-radius: 20px;
+    border: 1px solid rgba(255,255,255,0.05);
+    text-align: center;
+}
+
+.contato-info h2 {
+    margin-bottom: 25px;
+}
+
+.contato-info p {
+    margin-bottom: 15px;
+    color: var(--gray);
+}
+
+.contato-info i {
+    color: var(--primary-light);
+    margin-right: 10px;
+}
+
+.btn-whats {
+    display: inline-block;
+    margin-top: 20px;
+    background: #25D366;
+    padding: 10px 20px;
+    border-radius: 30px;
+    color: white;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.btn-whats:hover {
+    transform: translateY(-3px);
+}
+
+@media(max-width: 900px){
+    .contato-container {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+}
